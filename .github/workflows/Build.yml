@@ -10,12 +10,11 @@ jobs:
         uses: actions/checkout@v2
       - name: Start Running Build Shell Script
         run: |
+             chmod 755 ./create.sh
+             ./create.sh
              cd payload
              chmod 755 ./make_it.sh
-             ./make_it.sh
-             cd ../
-             chmod 755 ./create.sh
-              ./create.sh
+              ./make_it.sh
 
       - name: Download Output
         uses: actions/upload-artifact@v2

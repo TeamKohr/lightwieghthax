@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-      - name: npm install, build, and test
+      - name: Start Running Build Shell Script
         run: |
              cd payload
              chmod 755 ./make_it.sh
@@ -17,8 +17,8 @@ jobs:
              chmod 755 ./create.sh
               ./create.sh
 
-      - name: Archive code coverage results
+      - name: Download Output
         uses: actions/upload-artifact@v2
         with:
-          name: code-coverage-report
+          name: lightweighthax-output
           path: build

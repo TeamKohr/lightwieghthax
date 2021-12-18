@@ -36,7 +36,7 @@ mkdir -p ../site/haxs/
 cp index.html ../site/haxs/
 cp ../payload/payload.png ../site/haxs/
 cp wii.png ../site/haxs/
-co ..wait.mp3 ../site/has/
+cp wait.mp3 ../site/has/
 cp ../htaccess_redirect ../site/.htaccess
 cp ../htaccess_handler ../site/haxs/.htaccess
 
